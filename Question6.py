@@ -1,23 +1,28 @@
-# Question:
+# Question:-
 
-# WAP to find factorial of a number:-
+# WAP to find factorial of number
 
-# CODE:-
+# code:
 
-# For this we can import the math module which contains the method 'factorial'
-# 'Factorial' of a number is all numbers multiplied till that number for ex- 3!=1x2x3=6
-import math
-
-# Here, we will use 'int' because factorial method does not accept decimal
+# Here we ask the user to give a number.
 num=int(input('Enter a number: '))
 
-# For the output, we can simply include it in a print statement:
-print(f'Factorial of {num} is ',math.factorial(num))
+# Here we introduce a variable which shall store the factorial of the number
+pro_num=1
 
-# Additional Comments:
-    # I have used formatted strings but you use what you are comfortable with. Check next line...
-    # print('Factorial of ',num,'is ',math.factorial(num))
+# Now we use a 'for' loop. I have provided the lower limit as 1 and the upper limit as num+1, because upper value is not counted
+for i in range(1,num+1):
 
-# OUTPUT
-# Enter a number: 3
-# Factorial of 3 is  6
+    # This line of code tells python to multiply rpo_num i.e. 1 with each element 'i' of given range
+    pro_num*=i
+    # Now we simply print the numbers
+    print(pro_num)
+
+# No additional comments
+
+# OUTPUT :-
+# Enter a number: 4
+# 1
+# 2
+# 6
+# 24
